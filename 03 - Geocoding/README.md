@@ -20,13 +20,13 @@ let geocoder = CLGeocoder()
 We can then call a method on it, and pass in the location we want geocoded as an argument. The method we want to call is this:
 
 ```swift
-func reverseGeocodeLocation(location: CLLocation, completionHandler: CLGeocodeCompletionHandler)
+func reverseGeocodeLocation(_ location: CLLocation, completionHandler: CoreLocation.CLGeocodeCompletionHandler)
 ```
 
 It has a completion handler, formally known as a "closure" in Swift. In other languages it make be refereed to as a "callback". A closure is just a code block (like any other function) that gets performed after something happens. In this case the completion handler is performed once the server has responded with the information regarding our request. Hopefully the information containing an address, but if not, an error. The final method call for us will look like this: 
 
 ```swift
-geocoder.reverseGeocodeLocation(location, completionHandler: {(placemarks, error) -> Void in
+geocoder.reverseGeocodeLocation(location) { (placemarks, error) in
 	//Do whatever we need to do with either our placemarks or error...
 })
 ```
