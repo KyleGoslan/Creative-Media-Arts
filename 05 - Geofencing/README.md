@@ -45,3 +45,45 @@ This simulates movement from Bournemouth Gardens to Bournemouth Pier to Boscombe
 
 Once you have this done you'll be able to choose it from the location simulator when you run your app. It will be called whatever you named your file.
 
+## Creating Regions
+
+You can be notified when a user enters or exits a region by creating `CLRegion` objects. We'll always use `CLCircularRegion` objects to create an area with a radius. Firstly you need a `CLLocationCoordinate2D` object to work with. 
+
+```swift 
+let someLocation = CLLocationCoordinate2D(latitude: 0.0, longitude: 0.0)
+```
+
+Now we can create a cirular region based on those coordinates, we'll also pass in how far from that location our user needs to be before we are notified (in meters), and a way to identify that region, which is just a string. Once we have that we can ask our `CLLocationManager` object to start listeneing for that region. 
+
+```swift
+let someRegion = CLCircularRegion(center: someLocation, radius: 500, identifier: "Some Place")
+locationManager.startMonitoring(for: someRegion)
+```
+
+We can then get notified in a delegate method of the location manager object when our user enters or leaves one of those regions.
+
+```swift
+func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
+    
+}
+
+func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
+    
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
