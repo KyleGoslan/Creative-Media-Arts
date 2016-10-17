@@ -1,6 +1,6 @@
-#Geofencing
+# 05 - Geofencing
 
-##Simulating Custom Locations
+## Simulating Custom Locations
 
 So far we've been using Xcode to simulate our locations from a list. 
 
