@@ -4,15 +4,15 @@
 
 
 ```swift
-    let someCoordinate = CLLocationCoordinate2D(latitude: 0.0, longitude: 0.0)
-    
-    let annotation = MKPointAnnotation()
-    annotation.coordinate = someCoordinate
-    mapView.addAnnotation(annotation) 
+let someCoordinate = CLLocationCoordinate2D(latitude: 0.0, longitude: 0.0)
+
+let annotation = MKPointAnnotation()
+annotation.coordinate = someCoordinate
+mapView.addAnnotation(annotation) 
 ```
 
 To remove all the annotations on a map you can do the following:
 
 ```swift
-    mapView.removeAnnotations(mapView.annotations)
+mapView.removeAnnotations(mapView.annotations)
 ```
