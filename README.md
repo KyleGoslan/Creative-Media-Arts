@@ -8,4 +8,12 @@ Simple app to change text of a lable on a button press.
 Requestion a users location. 
 
 ### [03 - Reverse Geocoding](https://github.com/KyleGoslan/Creative-Media-Arts/tree/master/03%20-%20Geocoding)
-Reverse Geocoding - taking latitude and longitude coordinates and getting a "human readable" location from it. 
+Reverse Geocoding - taking latitude and longitude coordinates and getting a "human readable" location from it.
+
+### [04 - Reverse Geocoding](https://github.com/KyleGoslan/Creative-Media-Arts/tree/master/03%20-%20Geocoding)
+
+
+### [05 - Map Annotations](https://github.com/KyleGoslan/Creative-Media-Arts/tree/master/03%20-%20Geocoding)
+
+
+### [06 - Geofencing](https://github.com/KyleGoslan/Creative-Media-Arts/tree/master/03%20-%20Geocoding)
